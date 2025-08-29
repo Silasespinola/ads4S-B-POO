@@ -1,16 +1,24 @@
 package com.bn.projeto_silas.model;
 
-public class Model {
-
-    private int id;
+public class Pessoa {
+    private Long id;
     private String nome;
     private int idade;
 
-    public int getId() {
+    public Pessoa() {
+    }
+
+    public Pessoa(Long id, String nome, int idade) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -29,8 +37,4 @@ public class Model {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-};
-
-
-
-
+}
